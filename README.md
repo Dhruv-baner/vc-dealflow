@@ -20,36 +20,38 @@ We address these challenges through three layers of intelligent filtering:
 - **AI-Powered Curation**: Deploy specialized agents to match entities across sources, interpret signal quality, and generate investment narratives from raw data
 - **Verified Intelligence**: Every featured company undergoes manual validation to ensure accuracy, with transparent confidence scoring on all metrics
 
-### Project Structure
-
-The platform is built across eight focused modules:
-
-**Data Collection** (Notebooks 1.1-1.5): Ingests data from Companies House API, funding news sources, YC databases, job boards, and Product Hunt
-
-**Entity Resolution** (Notebooks 2.1-2.4): Matches companies across disparate sources and builds a master database with confidence-scored records
-
-**Signal Processing** (Notebooks 3.1-3.4): Calculates hiring velocity, funding trajectories, and product momentum indicators
-
-**Market Intelligence** (Notebooks 4.1-4.4): Generates sector trends, geographic analysis, and comparative benchmarking
-
-**Company Curation** (Notebooks 5.1-5.4): Scores and selects featured companies with AI-generated investment narratives
-
-**Visualization** (Notebooks 6.1-6.4): Builds interactive dashboard with sector heatmaps, company profiles, and filtering
-
-**Automation** (Notebooks 7.1-7.4): Schedules weekly updates and generates email digests
-
-**Validation** (Notebooks 8.1-8.4): Tests accuracy against ground truth and measures error rates
-
 ### Technical Stack
 
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
-| Data Sources | Companies House API, Tech.eu, Sifted, LinkedIn | Authoritative UK company and funding data |
+| Data Sources | Companies House API, Tech.eu, Sifted, LinkedIn | UK company and funding data |
 | Processing | Python, pandas, SQLite | Data cleaning and aggregation |
 | AI Agents | Claude API | Entity matching, signal interpretation, narrative generation |
-| Visualization | Streamlit | Interactive dashboard and weekly reports |
+| Visualization | Streamlit | Interactive dashboard and reports |
 | Automation | GitHub Actions | Scheduled data refreshes |
 | Hosting | Streamlit Cloud | Free public deployment |
+
+### Project Structure
+
+The platform is built across eight focused modules:
+
+**Data Collection**: Ingests data from Companies House API, funding news sources, YC databases, job boards, and Product Hunt
+
+**Entity Resolution**: Matches companies across disparate sources and builds a master database with confidence-scored records
+
+**Signal Processing**: Calculates hiring velocity, funding trajectories, and product momentum indicators
+
+**Market Intelligence**: Generates sector trends, geographic analysis, and comparative benchmarking
+
+**Company Curation**: Scores and selects featured companies with AI-generated investment narratives
+
+**Visualization**: Builds interactive dashboard with sector heatmaps, company profiles, and filtering
+
+**Automation**: Schedules weekly updates and generates email digests
+
+**Validation**: Tests accuracy against ground truth and measures error rates
+
+
 
 ### AI Agent Architecture
 
@@ -61,4 +63,4 @@ Three specialized agents handle tasks where context and nuance matter:
 
 **Narrative Generation Agent**: Synthesizes structured data into concise investment briefs that explain why a company merits attention right now
 
-**NOTE: This is in production stage. Any results are a beta version** 
+**NOTE: This dealflow project is in the production stage. Any results are a beta version** 

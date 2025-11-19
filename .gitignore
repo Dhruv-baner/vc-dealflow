@@ -1,3 +1,10 @@
+.env
+
+# Data files
+data/*.db
+data/*.csv
+data/*.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
